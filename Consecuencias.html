@@ -31,7 +31,7 @@
 
 .contenedor { /*Para no cambiar tanto creamos una clase superior llamada .contenedor*/
 display: flex;
-flex-direction:column;
+flex-direction:wrap;
 flex-wrap: wrap;
 justify-content: space-between;
 } /*.cierro la clase contenedor*/
@@ -39,7 +39,7 @@ justify-content: space-between;
 .container { /*.container sería ahora la clase hija de contenedor*/
     margin: 10px;
     align-items: center;
-    
+    max-width: 800px;
     padding: 5px;
     background-color: #fff;
     box-shadow: 0 0 10px rgb(0, 0, 0);
@@ -49,14 +49,16 @@ justify-content: space-between;
 .tip  { /*.tip sería ahora otra clase hija dentro de contenedor*/
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
       padding: 5px;
-    
+      width: 20%;
       color: #ff0707;
       margin-left: 10px;
+      margin-right: 150px;
       align-items: center;
     }
     .tip img {
-        width:80%;
+        width:300px;
         border: 2px solid rgb(0, 0, 0);
+        max-height: 500px;
       }
 
     .tip p {background-color: #080808;
