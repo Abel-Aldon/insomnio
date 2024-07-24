@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Consecuencias</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+  <style>
+
+     header {
+    
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    height: 90px;
+    width: 400;
+    margin-right: -70px ;
+ } 
+  
+     body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #06adf0;
+ }
+
+.contenedor { /*Para no cambiar tanto creamos una clase superior llamada .contenedor*/
+display: flex;
+flex-direction:column
+flex-wrap: wrap;
+justify-content: space-between;
+} /*.cierro la clase contenedor*/
+
+.container { /*.container sería ahora la clase hija de contenedor*/
+    margin: 10px;
+    align-items: center;
+    
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+.tip  { /*.tip sería ahora otra clase hija dentro de contenedor*/
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+      padding: 5px;
+    
+      color: #ff0707;
+      margin-left: 10px;
+      align-items: center;
+    }
+    .tip img {
+        width:80%;
+        border: 2px solid rgb(0, 0, 0);
+      }
+
+    .tip p {background-color: #080808;
+      
+    box-shadow: #b46060;}
+    
+    button {
+
+      background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            margin: 5px;
+            margin-inline-start: 10px;
+            margin-block-start: -1px;
+            margin-left: 20px;
+
+  }
+
+    button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+    
+
+
+
+    .box{
+
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+.box:hover {
+
+background-color: #0056b3;
+
+}
+
+footer {
+    position: relative;
+    margin-top: 100px;
+    height: 40px; 
+    padding:5px 0px;
+    clear: both;
+    background: hsla(0, 0%, 5%, 0.919);
+    text-align: center;
+    color: #fff;
+}
+
+  </style>
+
+</head>
+
+<body>
+  <header><h1>CONSECUENCIAS</h1></header>
+
+  <main>
+<section class="contenedor"> <!--ponemos la división tipo container dentro de la clase contenedor-->
+    <div class="container">
+    <ul>
+      
+      <h2> Dificultades emocionales</h2>
+        <div class="box">
+        <p>La causa de no dormir puede ver afectado a los ajustes piscológicos de una persona. Las personas que sufren de insomnio  pueden mostrarse irritables todos los días, estos mostrando enfermedades como estar ansioso y estar depresivos. Cuando una persona no cuenta con un descanso reparador, es frecuente que interprete la realidad más negativa. </p>
+        </div>
+
+      <h2>Problemas de memoria</h2>
+        <div class="box">
+        <p>Las personas que sufren de insomnio también tienden a tener algunas dificultades en su capacidad de memoria. Esto puede verse afectado en la memoria procedimental, aquella que nos permite recordar el cómo se desempeñan las tareas de la vida cotidiana.</p>
+          </div>
+
+      <h2>Alucinaciones</h2>
+        <div class="box">
+       <p>Padecer con problemas de insomnio puede llevar a casos extremos de tener alucinaciones. Aunque no se dan en el transcurso que la persona está despierta, esta tiene un ataque mayor cuando la persona duerme. Estas alucinaciones pueden tener un efecto con tener parálisis del sueño.</p>
+        </div>
+        
+      <h2>Problemas digestivos</h2>
+      <div class="box">
+        <p>La digestión es uno de los muchos procesos metabólicos que se ponen en marcha durante las horas nocturnas. El sistema digestivo encuentra perfecto el momento de dormir para digerir mejor la comidad. Por ende, si una persona no duerme bien, el estomago no podrá digerir bien la comida y podrá sufrir de alteraciones como el estreñimiento y la acidez.</p>
+      </div>
+    </ul>
+    </div>
+    <div class="tip">
+      <img src="sueño.jpg"> <!--Acá queda mejor la imagen-->
+      <p>Recuerda que Las personas que sufren de insomnio también tienden a tener algunas dificultades en su capacidad de memoria </p>
+
+    </div>
+  </section>
+  
+  </main> 
+
+  <aside>
+
+   <!--
+    <div class="img"> 
+      <img src="sueño.jpg">
+      img no es una clase sino que en el estilo atribuiste características a los objetos img,
+      en ese sentido, no es necesario crear esta división para la imagen
+    </div> 
+    -->
+
+  </aside>
+
+   <section>
+
+    <a href="index.html"><button>Inicio</button></a>
+
+   </section> 
+
+   <footer>Producciones Abel Aldón y Garzón Fagua derechos reservados © junio de 2024.</footer>
+
+</body>
+</html>
